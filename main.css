@@ -1,0 +1,321 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto',
+   sans-serif;
+}
+body{
+   background: rgb(198, 190, 211);
+   width: 100%;
+}
+.container{
+   width: 95%;
+
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: auto 1fr;
+   column-gap: 15px;
+}
+.cubeBank{
+   width: 100%;
+   background: #fff;
+   display: grid;
+   grid-template-columns: 1fr;
+}
+.header{
+   display: grid;
+   grid-template-columns: auto 1fr;
+   place-items: start;
+   color: rgb(100, 78, 157);
+   column-gap: 10px;
+   padding: 30px ;
+   
+}
+.header h3{
+   font-size: 18px;
+   font-weight: 900;
+}
+.header i{
+   font-size: 30px;
+}
+.cubeBank ul{
+   display: grid;
+   grid-template-columns: 1fr;
+
+}
+.cubeBank ul li{
+   list-style: none;
+   display: grid;
+   grid-template-columns: auto 1fr;
+   column-gap: 10px;
+   padding: 10px 40px 10px 40px;
+}
+.logout{
+   padding: 10px 40px 10px 40px;
+   color: #aaa;
+}
+.cubeBank ul li:hover{
+   background: rgb(198, 190, 211);
+}
+.cubeBank ul li:hover i{
+   color: rgb(100, 78, 157);
+}
+.cubeBank ul li:hover a{
+   color: rgb(100, 78, 157);
+}
+.cubeBank ul a{
+   text-decoration: none;
+   color: #aaa;
+   font-size: 15px;
+   font-weight: bold;
+}
+.cubeBank ul i{
+   color: #aaa;
+}
+.home-container{
+   background: #fff;
+   display: grid;
+   grid-template-columns: 1fr auto;
+   /* column-gap: 20px; */
+   padding: 30px 40px 30px 40px;
+}
+.home-container div{
+   display: flex;
+   width: 150px;
+   justify-content: space-between;
+}
+.home-container div i{
+   color:#aaa;
+}
+.home-container div h3{
+   font-size: 12px;
+   cursor: pointer;
+}
+.person{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 20px;
+}
+.home{
+   display: grid;
+   grid-template-columns: 1fr;
+   row-gap: 20px;
+}
+.detail{
+   display: grid;
+   grid-template-columns: 1fr;
+   row-gap: 20px;
+}
+.profile,
+.transaction,
+.card-type,
+.ratings {
+   background: #fff;
+}
+.profile{
+   display: grid;
+   grid-template-columns: 1fr;
+   row-gap: 15px;
+   padding: 30px;
+   color:rgb(74, 74, 74)
+}
+.profile h3{
+   color: rgb(100, 78, 157);
+}
+.img{
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr auto;
+   place-items: center;
+   column-gap: 5px;
+}
+.img img{
+   border-radius: 20px;
+   width: 100%;
+   object-fit: contain;
+}
+.img i{
+   font-size: 23px;
+   color: #aaa;
+}
+.transaction{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   color: rgb(74, 74, 74);
+   padding: 30px 40px 30px 40px;
+   border-radius: 4px;
+   row-gap: 10px;
+   
+}
+.transaction button {
+   background-color: transparent;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   transition: all .3s ease;
+   color:#aaa
+}
+.transaction button:hover{
+   color: rgb(100, 78, 157);
+}
+.transaction .btn{
+   justify-self: end;
+}
+.card-type{
+   padding: 30px 40px 30px 40px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 10px;
+}
+.card-type article h1{
+   font-size: 16px;
+   color: rgb(74, 74, 74);
+}
+.card-type article h3{
+   font-size: 14px;
+   color: #ccc;
+}
+.card-type article {
+   display: grid;
+   grid-template-columns: 1fr;
+   row-gap: 10px;
+}
+.crypto .ratings{
+   background-color: #fff;
+   padding: 20px 30px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.cryptos{
+   background: #fff;
+   display: grid;
+}
+.crypto .ratings .btn {
+   justify-self: end;
+}
+.crypto button {
+   background-color: transparent;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   transition: all .3s ease;
+   color: #aaa
+}
+
+.crypto button:hover {
+   color: rgb(100, 78, 157);
+}
+.coins_amount{
+   background-color: #fff;
+   padding: 20px 30px;
+   display: grid;
+   grid-template-columns: 1fr;
+   row-gap: 15px;
+}
+.coins_amount article{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 10px;
+}
+.coins_amount article .amount{
+   justify-self: end;
+}
+.coins_amount article .amount p{
+   color: #aaa;
+   
+}
+.coins_amount article .coin div{
+   display: grid;
+   grid-template-columns: 1fr;
+   row-gap: 5px;
+}
+.coins_amount article .coin {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   column-gap: 10px;
+}
+.coins_amount article .coin i {
+   font-size: 20px;
+}
+.coins_amount article .coin .fa-bitcoin {
+   color: rgb(244, 153, 4);
+}
+.coins_amount article .coin .fa-ethereum {
+   color: rgb(149, 186, 219);
+}
+.coins_amount article .coin div p{
+   color: #aaa;
+   font-weight: bold;
+   font-size: 14px;
+}
+.crypto{
+   display: grid;
+   grid-template-columns: 1fr;
+   row-gap: 20px;
+}
+.crypto .links{
+   background: #fff;
+   display: grid;
+}
+.links .quick{
+   background-color: #fff;
+   padding: 20px 30px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.links .quick button {
+   background-color: transparent;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   transition: all .3s ease;
+   color: #aaa
+}
+.links .quick .btn{
+   justify-self: end;
+}
+.links article{
+   padding: 20px 30px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   row-gap: 15px;
+}
+.links article div:nth-child(2),
+.links article div:nth-child(4) {
+   justify-self: end;
+}
+.links article div{
+   display: grid;
+   grid-template-columns: 1fr;
+   align-items: center;
+   
+}
+.links article .fa-arrow-circle-up{
+   color: rgb(150, 193, 229);
+}
+.links article .fa-money-bill{
+   color: rgb(247, 216, 63);
+}
+.links article .fa-plus-circle {
+   color: rgb(242, 145, 24)
+}
+.links article .fa-lightbulb {
+   color: rgb(34, 98, 83)
+}
+.links article i{
+   font-size: 32px;
+   border-radius: 50%;
+   transition: all .3s ease;
+   cursor: pointer;
+}
+.links article i:hover{
+   opacity: .7;
+}
+.logout{
+   display: flex;
+   align-items: center;
+}
+.logout p{
+   margin-left: 15px;
+}
